@@ -40,5 +40,7 @@
     ./waypaper.nix                    # GUI wallpaper picker
     ./xdg-mimes.nix                   # xdg config
     ./zsh                             # shell
+
+    ./firefox.nix
   ];
 }
