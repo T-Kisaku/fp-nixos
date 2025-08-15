@@ -51,6 +51,11 @@
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
 
     ghostty.url = "github:ghostty-org/ghostty";
+
+    my-dots = {
+      url = "git+ssh://git@github.com:T-Kisaku/dotfiles.git";
+      flake = false;
+    };
   };
 
   outputs =
@@ -71,7 +76,7 @@
           modules = [ ./hosts/desktop ];
           specialArgs = {
             host = "desktop";
-            inherit self inputs username;
+            inherit self inputs username my-dots;
           };
         };
         laptop = nixpkgs.lib.nixosSystem {
@@ -79,7 +84,7 @@
           modules = [ ./hosts/laptop ];
           specialArgs = {
             host = "laptop";
-            inherit self inputs username;
+            inherit self inputs username my-dots;
           };
         };
         vm = nixpkgs.lib.nixosSystem {
@@ -87,7 +92,7 @@
           modules = [ ./hosts/vm ];
           specialArgs = {
             host = "vm";
-            inherit self inputs username;
+            inherit self inputs username my-dots;
           };
         };
       };

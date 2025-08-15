@@ -41,6 +41,7 @@
     ./xdg-mimes.nix                   # xdg config
     ./zsh                             # shell
 
+    ./lazyvim.nix
     ./firefox.nix
     ./google-chrome.nix
   ];
