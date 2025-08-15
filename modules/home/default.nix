@@ -42,5 +42,6 @@
     ./zsh                             # shell
 
     ./firefox.nix
+    ./google-chrome.nix
   ];
 }
