@@ -16,5 +16,7 @@
     ./user.nix
     ./wayland.nix
     ./virtualization.nix
+
+    ./1pass.nix
   ];
 }
