@@ -18,6 +18,14 @@
         identityFile = "~/.ssh/id_github";
         identitiesOnly = true;
       };
+      vogsphere = {
+        host = "vogsphere-v2.42tokyo.jp";
+        hostname = "vogsphere-v2.42tokyo.jp";
+        user = "git";
+        port = 22;
+        identityFile = "~/.ssh/id_vogsphere";
+        identitiesOnly = true;
+      };
     };
   };
 
