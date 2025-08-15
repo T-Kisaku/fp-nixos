@@ -670,6 +670,23 @@
         "type": "github"
       }
     },
+    "my-dots": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1740478055,
+        "narHash": "sha256-zTza48NWEiIq3jSh1fn/D2K3PnF67DHOWa2L/av6PuA=",
+        "ref": "main",
+        "rev": "1534f104c347388e292e0ea2dfc75b8efa81dd4a",
+        "revCount": 41,
+        "type": "git",
+        "url": "ssh://git@github.com/T-Kisaku/dotfiles.git"
+      },
+      "original": {
+        "ref": "main",
+        "type": "git",
+        "url": "ssh://git@github.com/T-Kisaku/dotfiles.git"
+      }
+    },
     "nix-flatpak": {
       "locked": {
         "lastModified": 1754777568,
@@ -879,6 +896,7 @@
         "hyprland-plugins": "hyprland-plugins",
         "hyprlock": "hyprlock",
         "hyprpicker": "hyprpicker",
+        "my-dots": "my-dots",
         "nix-flatpak": "nix-flatpak",
         "nix-gaming": "nix-gaming",
         "nixpkgs": "nixpkgs_4",

@@ -53,7 +53,7 @@
     ghostty.url = "github:ghostty-org/ghostty";
 
     my-dots = {
-      url = "git+ssh://git@github.com:T-Kisaku/dotfiles.git";
+      url = "git+ssh://git@github.com/T-Kisaku/dotfiles.git?ref=main";
       flake = false;
     };
   };
@@ -76,7 +76,7 @@
           modules = [ ./hosts/desktop ];
           specialArgs = {
             host = "desktop";
-            inherit self inputs username my-dots;
+            inherit self inputs username;
           };
         };
         laptop = nixpkgs.lib.nixosSystem {
@@ -84,7 +84,7 @@
           modules = [ ./hosts/laptop ];
           specialArgs = {
             host = "laptop";
-            inherit self inputs username my-dots;
+            inherit self inputs username;
           };
         };
         vm = nixpkgs.lib.nixosSystem {
@@ -92,7 +92,7 @@
           modules = [ ./hosts/vm ];
           specialArgs = {
             host = "vm";
-            inherit self inputs username my-dots;
+            inherit self inputs username;
           };
         };
       };
