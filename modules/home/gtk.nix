@@ -10,6 +10,10 @@
     noto-fonts-emoji
     fantasque-sans-mono
     maple-mono.truetype-autohint
+
+    # Japanese fonts
+    noto-fonts-cjk-sans
+    ipafont
   ];
 
   gtk = {
