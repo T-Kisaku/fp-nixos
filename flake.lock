@@ -673,11 +673,11 @@
     "my-dots": {
       "flake": false,
       "locked": {
-        "lastModified": 1740478055,
-        "narHash": "sha256-zTza48NWEiIq3jSh1fn/D2K3PnF67DHOWa2L/av6PuA=",
+        "lastModified": 1755338079,
+        "narHash": "sha256-b1xRT41J/ju/9FkGBHCfuK6X0DemTzrCQbnn5E7eRrs=",
         "ref": "main",
-        "rev": "1534f104c347388e292e0ea2dfc75b8efa81dd4a",
-        "revCount": 41,
+        "rev": "f395f0bbc246534863b3e164848ad1814ef5cd8e",
+        "revCount": 42,
         "type": "git",
         "url": "ssh://git@github.com/T-Kisaku/dotfiles.git"
       },
