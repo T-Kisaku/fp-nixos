@@ -1,5 +1,8 @@
 { pkgs, ... }:
 {
+  imports = [
+    ./printing.nix
+  ];
   services = {
     gvfs.enable = true;
     gnome = {
