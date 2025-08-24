@@ -1,6 +1,6 @@
 { ... }:
 let
-  browser = "zen-beta";
+  browser = "firefox";
   terminal = "ghostty";
 in
 {
