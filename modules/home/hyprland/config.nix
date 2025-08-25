@@ -1,7 +1,7 @@
 { ... }:
 let
   browser = "firefox";
-  terminal = "ghostty";
+  terminal = "kitty";
 in
 {
   wayland.windowManager.hyprland = {
@@ -23,7 +23,7 @@ in
 
         "hyprlock"
 
-        "${terminal} --gtk-single-instance=true --quit-after-last-window-closed=false --initial-window=false"
+        "${terminal} --single-instance"
         "[workspace 1 silent] ${browser}"
         "[workspace 2 silent] ${terminal}"
       ];
@@ -148,7 +148,7 @@ in
         "$mainMod, F1, exec, show-keybinds"
 
         # keybindings
-        "$mainMod, Return, exec, ${terminal} --gtk-single-instance=true"
+        "$mainMod, Return, exec, ${terminal} --single-instance=true"
         "ALT, Return, exec, [float; size 1111 700] ${terminal}"
         "$mainMod SHIFT, Return, exec, [fullscreen] ${terminal}"
         "$mainMod, B, exec, [workspace 1 silent] ${browser}"
