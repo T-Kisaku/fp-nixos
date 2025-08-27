@@ -28,6 +28,7 @@
       "networkmanager"
       "wheel"
       "dialout" # Allow access to serial device (for Arduino dev)
+      "docker"
     ];
     shell = pkgs.zsh;
   };
