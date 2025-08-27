@@ -42,6 +42,7 @@
     ./zsh                             # shell
 
     ./lazyvim.nix
+    ./lazydocker.nix
     ./zellij.nix
     ./firefox.nix
     ./google-chrome.nix
