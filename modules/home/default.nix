@@ -45,7 +45,7 @@
     ./lazydocker.nix
     ./zellij.nix
     ./firefox.nix
-    ./mysql-workbench.nix
+    ./dbeaver.nix
     ./google-chrome.nix
   ];
 }
