@@ -18,6 +18,14 @@
         identityFile = "~/.ssh/id_github";
         identitiesOnly = true;
       };
+      gitlab-io = {
+        host = "gitlab.invest-online.co.jp";
+        hostname = "gitlab.invest-online.co.jp";
+        user = "git";
+        port = 22;
+        identityFile = "~/.ssh/id_gitlab-io";
+        identitiesOnly = true;
+      };
       vogsphere = {
         host = "vogsphere-v2.42tokyo.jp";
         hostname = "vogsphere-v2.42tokyo.jp";
