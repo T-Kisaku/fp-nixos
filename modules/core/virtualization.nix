@@ -26,6 +26,13 @@
       };
     };
     spiceUSBRedirection.enable = true;
+    docker.rootless.enable = true;
   };
   services.spice-vdagentd.enable = true;
+
+  environment.systemPackages = with pkgs; [
+    docker-compose
+  ];
+  # To use docker with ports less than 1024
+  networking.sysctl."net.ipv4.ip_unprivileged_port_start" = 0;
 }
