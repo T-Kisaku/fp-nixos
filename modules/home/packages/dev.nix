@@ -23,5 +23,6 @@
     python312Packages.ipython
 
     nodejs
+    php
   ];
 }
